@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive rating component</title> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="component__container">
+      <div id="star" class="component__circle">
+        <img src="./images/icon-star.svg" alt="star">
+      </div>
+      <h1 class="text-main">How did we do?</h1>
+      <p class="text-second">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <div class="component__ratebar__wrapper">
+        <div class="component__ratebar">
+          <button id="rate_1" class="component__circle" onclick="setValue(1)">1</button>
+          <button id="rate_2" class="component__circle" onclick="setValue(2)">2</button>
+          <button id="rate_3" class="component__circle" onclick="setValue(3)">3</button>
+          <button id="rate_4" class="component__circle" onclick="setValue(4)">4</button>
+          <button id="rate_5" class="component__circle" onclick="setValue(5)">5</button>
+        </div>
+      </div>
+      <div class="submit-button__wrapper">
+        <button class="submit-button" onclick="reDirect()">SUBMIT</button>
+      </div>
+      </div>
+    <script src="./script.js"></script>
+  
+
+</body>
+</html>
